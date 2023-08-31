@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+ 
+  .encabezado{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: black
+  }
+
+  h2{
+    margin-left: 20px;
+  }
+
+  section h1{
+    text-decoration: underline;
+  }
+  
+  .container{
+    margin: auto;
+    background-color: #d3d3d3;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: left;
+  }
+  
+  .item{
+    flex-basis: 100px;
+    flex-grow: 1;
+    max-height: 100px;
+    line-height: 100px;
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #bc3b69;
+    flex-basis: calc(33.33% - 20px);
+    /* Este ultimo valor encontre para poder hacer que los items se vayan adaptando al tamano que tiene la seccion, es 
+     decir cuando el container se vaya achicando. */
+  }
+
+   /*
+  Consigna:
+  Asignar las propiedades que correspondan par que los ítems dentro de container se vayan distribuyendo en varias líneas y orden inverso a medida que container se vaya achicando.
+  */
